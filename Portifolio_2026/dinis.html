@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinis Mário Mateus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Grid Background -->
+    <div class="grid-background"></div>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="menu-toggle" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="profile-section">
+            <div class="profile-img-container">
+                <img src="fotos/2025_foto.jpg" alt="dinis" class="profile-img">
+                <div class="status-indicator"></div>
+            </div>
+            <h2>Dinis Mário Mateus</h2>
+            <p class="role">Front-End Developer</p>
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <div class="number">5+</div>
+                    <div class="label">Projetos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">2</div>
+                    <div class="label">Certificações</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">4+</div>
+                    <div class="label">Meses PM</div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="#home" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Início</span>
+            </a>
+            <a href="#certifications" class="nav-item">
+                <i class="fas fa-certificate"></i>
+                <span>Certificações</span>
+            </a>
+            <a href="#experience" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Experiência PM</span>
+            </a>
+            <a href="#projects" class="nav-item">
+                <i class="fas fa-code"></i>
+                <span>Projetos</span>
+            </a>
+            <a href="#home" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Sobre Mim</span>
+            </a>
+            <a href="#home" class="nav-item">
+                <i class="fas fa-envelope"></i>
+                <span>Contacto</span>
+            </a>
+        </nav>
+
+        <div class="social-section">
+            <div class="social-links">
+                <a href="https://github.com/dinismario" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dinis-mario/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/dinismario_/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <button class="cv-button" onclick="downloadCV()">
+                <i class="fas fa-download"></i>
+                Baixar CV
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-text">
+                <h1>olá!</h1>
+                <h2>Eu sou <span class="highlight">Dinis Mário</span></h2>
+                
+                <div class="role-badges">
+                    <span class="badge">Front-End Develope</span>
+                    <span class="badge">Estudante de Engenharia Informática</span>
+                    <span class="badge">Project Manager</span>
+                </div>
+
+                <div class="education-card">
+                    <h3>🎓 Formação Académica</h3>
+                    <p>Estudante de Engenharia Informática no <strong> Instituto Superior Internacional de Angola (ISIA)</strong> & Project <strong> Manager em Startup</strong></p>
+                </div>
+
+                <p class="hero-description">
+                    Estudante apaixonado por tecnologia <strong>soluções elegantes</strong> Atualmente, sou <strong> finalista no curso de Engenharia Informática</strong> focado em uma formação mais teórica e académica, com foco em desenvolvimento front-end e redes de computadores. <strong>Certificado CCNA</strong>, com sólido conhecimento em infraestrutura de rede, combinando expertise técnica em protocolos e segurança com habilidades de desenvolvimento web moderno. 
+                    <br><br>
+                    Minha visão única interdisciplinar me permite criar aplicações web que não apenas são visualmente atraentes, mas também otimizadas para performance e <strong>segurança de rede.</strong>
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="#projects" class="cta-button cta-primary">
+                        <i class="fas fa-code"></i>
+                        Ver Projetos
+                    </a>
+                    <a href="#certifications" class="cta-button cta-secondary">
+                        <i class="fas fa-certificate"></i>
+                        Certificações
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <img src="fotos/2025_foto.jpg" alt="dinis" class="hero-profile-img">
+                    
+                    <div class="floating-badge top-left">
+                        <i class="fas fa-code"></i>
+                        <div class="badge-number">5+</div>
+                        <div class="badge-text">Projetos</div>
+                    </div>
+                    
+                    <div class="floating-badge bottom-right">
+                        <i class="fas fa-certificate"></i>
+                        <div class="badge-number">CCNA</div>
+                        <div class="badge-text">Certificado</div>
+                    </div>
+                </div>
+
+                <div class="social-icons-right">
+                    <a href="https://github.com/dinismario" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dinis-mario/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dinismario_/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section" id="certifications">
+            <div class="section-header reveal">
+                <div class="section-label">Certificações Profissionais</div>
+                <h2 class="section-title">Minhas Certificações</h2>
+                <p class="section-description">
+                    Certificações reconhecidas internacionalmente em redes de computadores
+                </p>
+            </div>
+
+            <div class="certifications-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>CCNA 1</h3>
+                    <p class="cert-provider">Cisco Networking Academy</p>
+                    <p class="cert-description">
+                        Introdução às Redes de Computadores - Fundamentos de rede, modelos OSI e TCP/IP, configuração básica de dispositivos Cisco, protocolos de camada de aplicação e fundamentos de segurança.
+                    </p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">Redes</span>
+                        <span class="skill-tag">TCP/IP</span>
+                        <span class="skill-tag">OSI Model</span>
+                        <span class="skill-tag">Cisco IOS</span>
+                        <span class="skill-tag">Routing</span>
+                        <span class="skill-tag">Switching</span>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>CCNA 2</h3>
+                    <p class="cert-provider">Cisco Networking Academy</p>
+                    <p class="cert-description">
+                        Switching, Routing e Fundamentos de Wireless - VLANs, Spanning Tree Protocol, EtherChannel, roteamento estático e dinâmico, OSPF, configuração de roteadores e switches.
+                    </p>
+                    <div class="cert-skills">
+                        <span class="skill-tag">VLANs</span>
+                        <span class="skill-tag">STP</span>
+                        <span class="skill-tag">OSPF</span>
+                        <span class="skill-tag">Static Routing</span>
+                        <span class="skill-tag">Dynamic Routing</span>
+                        <span class="skill-tag">EtherChannel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Management Experience Section -->
+        <section class="section" id="experience">
+            <div class="section-header reveal">
+                <div class="section-label">Experiência Profissional</div>
+                <h2 class="section-title">Project Manager em Startups</h2>
+                <p class="section-description">
+                    Experiência em gestão de projetos inovadores e participação em programas de aceleração
+                </p>
+            </div>
+
+            <div class="experience-timeline">
+                <!-- SonaJovem 5.0 -->
+                <div class="experience-card reveal">
+                    <div class="experience-header">
+                        <div class="experience-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="experience-title-group">
+                            <h3>Project Manager | Gestor de Projeto</h3>
+                            <p class="experience-company">SonaJovem 5.0 - Sonangol</p>
+                            <p class="experience-period">
+                                <i class="fas fa-calendar-alt"></i> Programa de Inovação
+                            </p>
+                        </div>
+                        <div class="experience-badge">
+                            <i class="fas fa-trophy"></i>
+                            Competição
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p>
+                            Participação ativa no <strong>programa SonaJovem 5.0 da Sonangol</strong>, um dos maiores programas de 
+                            inovação e empreendedorismo de Angola. Responsável pela gestão estratégica de projeto com foco em 
+                            impacto social e desenvolvimento tecnológico.
+                        </p>
+                        <ul class="achievement-list">
+                            <li><i class="fas fa-check-circle"></i> Desenvolvimento e gestão de projeto inovador no setor técnologicos</li>
+                            <li><i class="fas fa-check-circle"></i> Aplicação de metodologias ágeis (Scrum) para gestão de equipe</li>
+                            <li><i class="fas fa-check-circle"></i> Pitch e apresentação para stakeholders e investidores</li>
+                            <li><i class="fas fa-check-circle"></i> Análise de viabilidade técnica e financeira do projeto</li>
+                        </ul>
+                        <div class="tech-skills-used">
+                            <span class="skill-badge">Project Management</span>
+                            <span class="skill-badge">Agile/Scrum</span>
+                            <span class="skill-badge">Innovation</span>
+                            <span class="skill-badge">Team Leadership</span>
+                            <span class="skill-badge">Strategic Planning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Celera Angola -->
+                <div class="experience-card reveal">
+                    <div class="experience-header">
+                        <div class="experience-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="experience-title-group">
+                            <h3>Project Manager em Startup</h3>
+                            <p class="experience-company">Celera Angola - Banco Nacional de Angola (BNA)</p>
+                            <p class="experience-period">
+                                <i class="fas fa-calendar-alt"></i> 4 meses | Programa de Aceleração
+                            </p>
+                        </div>
+                        <div class="experience-badge">
+                            <i class="fas fa-star"></i>
+                            Aceleradora
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p>
+                            Gestor de projeto em startup durante o <strong>programa Celera Angola do BNA</strong>, focado em soluções 
+                            fintech e transformação digital. Experiência hands-on em ambiente de alta pressão e entregas rápidas.
+                        </p>
+                        <ul class="achievement-list">
+                            <li><i class="fas fa-check-circle"></i> Gestão completa do ciclo de vida do projeto (4 meses)</li>
+                            <li><i class="fas fa-check-circle"></i> Coordenação de equipe multidisciplinar (developers, designers, marketing)</li>
+                            <li><i class="fas fa-check-circle"></i> Implementação de OKRs e KPIs para tracking de progresso</li>
+                            <li><i class="fas fa-check-circle"></i> Gestão de stakeholders e comunicação com mentores do BNA</li>
+                            <li><i class="fas fa-check-circle"></i> Entrega de MVP dentro do prazo estabelecido</li>
+                        </ul>
+                        <div class="tech-skills-used">
+                            <span class="skill-badge">Startup Management</span>
+                            <span class="skill-badge">Fintech</span>
+                            <span class="skill-badge">OKRs/KPIs</span>
+                            <span class="skill-badge">MVP Development</span>
+                            <span class="skill-badge">Stakeholder Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ongoing Work -->
+                <div class="experience-card current reveal">
+                    <div class="experience-header">
+                        <div class="experience-icon current-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="experience-title-group">
+                            <h3>Project Manager Ativo em Startups</h3>
+                            <p class="experience-company">Ecossistema de Inovação Angolano</p>
+                            <p class="experience-period">
+                                <i class="fas fa-calendar-alt"></i> Atual | Projetos Contínuos
+                            </p>
+                        </div>
+                        <div class="experience-badge current-badge">
+                            <i class="fas fa-bolt"></i>
+                            Em Andamento
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p>
+                            <strong>Sigo firme em frente</strong> como Project Manager ativo no ecossistema de startups, aplicando 
+                            conhecimentos técnicos e habilidades de gestão para transformar ideias em produtos reais.
+                        </p>
+                        <ul class="achievement-list">
+                            <li><i class="fas fa-check-circle"></i> Gestão ágil de projetos com metodologias adaptativas</li>
+                            <li><i class="fas fa-check-circle"></i> Facilitação de dailies, sprints planning e retrospectives</li>
+                            <li><i class="fas fa-check-circle"></i> Risk management e resolução proativa de impedimentos</li>
+                            <li><i class="fas fa-check-circle"></i> Mentoria de equipes e desenvolvimento de talentos</li>
+                        </ul>
+                        <div class="commitment-statement">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Comprometido com a inovação e crescimento do ecossistema empreendedor angolano através de gestão de projetos eficaz e liderança inspiradora."</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="section-header reveal">
+                <div class="section-label">Portfolio de Projetos</div>
+                <h2 class="section-title">Meus Projetos</h2>
+                <p class="section-description">
+                    Seleção de projetos que demonstram minhas habilidades técnicas
+                </p>
+            </div>
+
+            <div class="projects-filter reveal">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="frontend">Front-end</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal" data-category="fullstack">
+                    <div class="project-image">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Sistema de Gestão de Transporte</h3>
+                            <span class="project-number">01</span>
+                        </div>
+                        <p class="project-description">
+                            Sistema completo para gestão de frota e rotas para empresa Nguame Maka. Inclui dashboard administrativo, controle de veículos, motoristas e rotas otimizadas.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dinismario/Nguame_maka" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Ver Projeto
+                            </a>
+                            <a href="https://github.com/dinismario/Nguame_maka" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal" data-category="frontend">
+                    <div class="project-image">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Calculadora Interativa</h3>
+                            <span class="project-number">02</span>
+                        </div>
+                        <p class="project-description">
+                            Calculadora moderna e responsiva com interface intuitiva. Suporta operações básicas e avançadas com histórico de cálculos e temas personalizáveis.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dinismario/Calculadora_Html_Css" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Ver Projeto
+                            </a>
+                            <a href="https://github.com/dinismario/Calculadora_Html_Css" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal" data-category="frontend">
+                    <div class="project-image">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Clone do Instagram</h3>
+                            <span class="project-number">03</span>
+                        </div>
+                        <p class="project-description">
+                            Recriação fiel da interface do Instagram com recursos de feed, stories, perfil e sistema de likes. Foco em design responsivo e UX.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dinismario/Clone_Instagram" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Ver Projeto
+                            </a>
+                            <a href="https://github.com/dinismario/Clone_Instagram" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal" data-category="python">
+                    <div class="project-image">
+                        <i class="fas fa-hand-rock"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Jogo Pedra, Papel e Tesoura</h3>
+                            <span class="project-number">04</span>
+                        </div>
+                        <p class="project-description">
+                            Jogo clássico desenvolvido em Python com interface de linha de comando. Inclui IA adaptativa, sistema de pontuação e estatísticas de jogo.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dinismario/Python-1/tree/main/projeto_final_py" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Ver Projeto
+                            </a>
+                            <a href="https://github.com/dinismario/Python-1/tree/main/projeto_final_py" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal" data-category="frontend">
+                    <div class="project-image">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>HDC-HOST</h3>
+                            <span class="project-number">05</span>
+                        </div>
+                        <p class="project-description">
+                            Landing page profissional para empresa de hospedagem web. Design moderno com seções de planos, recursos, depoimentos e formulário de contato.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dinismario/HDC-HOST" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Ver Projeto
+                            </a>
+                            <a href="https://github.com/dinismario/HDC-HOST" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Sidebar Toggle for Mobile
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+
+        // Close sidebar when clicking on nav items (mobile)
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    document.getElementById('sidebar').classList.remove('active');
+                }
+            });
+        });
+
+        // Active Navigation
+        const sections = document.querySelectorAll('section[id]');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href').slice(1) === current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Project Filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Scroll Reveal Animation
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealOnScroll = () => {
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Initial check
+
+        // Download CV Function
+        function downloadCV() {
+            // Download real CV file
+            const link = document.createElement('a');
+            link.href = 'CV_DINIS_MARIO_MATEUS_2026.pdf';
+            link.download = 'CV_DINIS_MARIO_MATEUS_2026.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Show notification
+            alert('📥 Download do CV iniciado!\n\nObrigado pelo interesse!');
+        }
+
+        // View CV in new tab
+        function viewCV() {
+            window.open('CV_DINIS_MARIO_MATEUS_2026.pdf', '_blank');
+        }
+
+        // Add view CV button to social section
+        const socialSection = document.querySelector('.social-section');
+        const viewCVBtn = document.createElement('button');
+        viewCVBtn.className = 'cv-button';
+        viewCVBtn.style.marginTop = '10px';
+        viewCVBtn.style.background = 'transparent';
+        viewCVBtn.style.border = '1px solid var(--border-color)';
+        viewCVBtn.innerHTML = '<i class="fas fa-eye"></i> Ver CV Online';
+        viewCVBtn.onclick = viewCV;
+        socialSection.appendChild(viewCVBtn);
+
+        // Theme toggle (optional feature)
+        let themeToggle = false;
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 't' || e.key === 'T') {
+                document.body.classList.toggle('light-theme');
+                themeToggle = !themeToggle;
+            }
+        });
+
+        // Parallax effect on hero image
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroVisual = document.querySelector('.hero-visual');
+            if (heroVisual) {
+                heroVisual.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+
+        // Typing effect for hero title (optional)
+        const heroTitle = document.querySelector('.hero-text h2');
+        if (heroTitle) {
+            const text = heroTitle.textContent;
+            heroTitle.textContent = '';
+            let i = 0;
+            
+            const typeWriter = () => {
+                if (i < text.length) {
+                    heroTitle.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 50);
+                }
+            };
+            
+            setTimeout(typeWriter, 500);
+        }
+
+        // Add particle effect to cursor (optional)
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() > 0.95) {
+                const particle = document.createElement('div');
+                particle.style.position = 'fixed';
+                particle.style.width = '4px';
+                particle.style.height = '4px';
+                particle.style.background = 'var(--accent-primary)';
+                particle.style.borderRadius = '50%';
+                particle.style.left = e.clientX + 'px';
+                particle.style.top = e.clientY + 'px';
+                particle.style.pointerEvents = 'none';
+                particle.style.zIndex = '9999';
+                particle.style.opacity = '0.6';
+                document.body.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.style.transition = 'all 1s ease-out';
+                    particle.style.transform = 'translateY(30px)';
+                    particle.style.opacity = '0';
+                }, 10);
+                
+                setTimeout(() => particle.remove(), 1000);
+            }
+        });
+
+        console.log('🚀 Portfolio carregado com sucesso!');
+        console.log('💡 Dica: Pressione "T" para alternar entre temas claro/escuro');
+    </script>
+</body>
+</html>
